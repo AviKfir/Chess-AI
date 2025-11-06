@@ -1,0 +1,69 @@
+# Chess Engine & Analysis Project
+
+## Requirements
+- Python 3.9+
+- Packages: see requirements.txt
+
+----
+
+## 1. Play Chess against the CNN model
+
+You can play a chess game from the Terminal against the CNN model engine.
+
+To play the Chess Game,
+Run in Terminal:
+python -m src.engine.ui
+
+--
+
+For more details, see the documentation in src/engine/ui.py.
+The CNN model is implemented in src/ml/cnn_model.py, the training pipeline
+is in src/ml/cnn_train.py, and the feature encoding that turns chess
+positions and moves into X and y is in src/ml/features.py.
+
+----
+
+## 2. Generate analysis & figures
+
+You can build all diagrams that are in folder 'figures'
+
+Run in Terminal:
+python run_all.py
+python src/ml/ml_train.py
+
+----
+
+## 3. Train the CNN model
+
+# Option A:
+If you have GPUs on your computer,
+Run in Terminal:
+python src/ml/cnn_train.py
+
+# Option B:
+You can train the model with Google Colab GPUs like that:
+1. Extract "Google Colab Package.zip" from Project.
+2. Inside you’ll find a folder "chess" and a notebook file "chess.ipynb".
+3. In Google Drive, upload the entire chess folder to the root (MyDrive).
+4. Open the notebook "chess.ipynb" in Google Colab.
+5. Enable GPU (in Colab) go to Runtime → Change runtime type → Hardware accelerator: GPU → Save.
+6. Run the notebook (Permit this notebook to access your Google Drive files? Yes).
+
+----
+
+## Team Members
+
+- Avi Klings
+  Email: avi.kfir@mail.huji.ac.il  
+  CSE: avi.kfir  
+
+- Shachar Levy
+  Email: shachar.levy@mail.huji.ac.il  
+  CSE: shahar99  
+
+- Romy Tzafrir
+  Email: romy.tzafrir@mail.huji.ac.il  
+  CSE: romytz  
+
+
+Have fun
